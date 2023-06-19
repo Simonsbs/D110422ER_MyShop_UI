@@ -22,7 +22,7 @@ export default function NewProduct() {
       description: inputDescription.current.value,
     };
 
-    fetch("https://localhost:7175/api/Products", {
+    fetch("https://myshopapi20230619210143.azurewebsites.net/api/Products", {
       method: state.productToEdit ? "put" : "post",
       headers: {
         "Content-Type": "application/json",

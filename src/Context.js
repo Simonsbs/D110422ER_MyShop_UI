@@ -13,7 +13,7 @@ const initState = {
 function getProductsFromAPI(state, dispatch) {
   dispatch({ type: "setIsLoading", payload: true });
 
-  fetch("https://localhost:7175/api/Products", {
+  fetch("https://myshopapi20230619210143.azurewebsites.net/api/Products", {
     method: "get",
     headers: {
       "Content-Type": "application/json",

@@ -9,7 +9,7 @@ export default function Login() {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    fetch("https://localhost:7175/api/Authentication", {
+    fetch("https://myshopapi20230619210143.azurewebsites.net/api/Authentication", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

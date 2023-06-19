@@ -13,7 +13,7 @@ export default function ProductRow({ product }) {
       return;
     }
 
-    fetch(`https://localhost:7175/api/Products/${product.id}`, {
+    fetch(`https://myshopapi20230619210143.azurewebsites.net/api/Products/${product.id}`, {
       method: "delete",
       headers: {
         "Content-Type": "application/json",
